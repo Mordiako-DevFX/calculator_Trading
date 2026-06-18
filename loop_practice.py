@@ -15,11 +15,11 @@ def analyze_journal(trade_list):
         else:
             total_loss += (-trade)
 
-    # محاسبات نهایی
+
     net_profit = total_profit - total_loss
     win_rate = (win_count / total_trades) * 100
 
-    # فرستادن دو تا خروجی اصلی به بیرون از تابع
+
     return win_rate, net_profit
 
 
